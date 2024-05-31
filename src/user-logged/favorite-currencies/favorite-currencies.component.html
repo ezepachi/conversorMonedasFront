@@ -1,0 +1,9 @@
+<div class="favorite-currencies">
+    <img src="assets/mastercard.svg" alt="Imagen de tarjetas">
+    <h2>Monedas Favoritas</h2>
+     @for (currency of favoriteCurrencies(); track currency) {
+      <p>{{ currency.symbol }} - {{ currency.name }} ({{ currency.convertibilityIndex }})</p>
+     }
+
+  <button (click)="addFavoriteCurrency()">Agregar Moneda Favorita</button>
+</div>

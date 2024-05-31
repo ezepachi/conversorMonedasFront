@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Free",
+    "price": 0,
+    "description": "Plan básico con 10 conversiones mensuales gratuitas.",
+    "conversionsLimit": 10
+  },
+  {
+    "id": 2,
+    "name": "Trial",
+    "price": 0,
+    "description": "Prueba gratuita con 100 conversiones durante 7 días.",
+    "conversionsLimit": 100
+  },
+  {
+    "id": 3,
+    "name": "Pro",
+    "price": 9.99,
+    "description": "Plan premium con conversiones ilimitadas y acceso a funciones exclusivas.",
+    "conversionsLimit": 0 
+  }
+]

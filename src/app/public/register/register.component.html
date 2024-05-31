@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>Monety</h1>
+  <h2>Registro</h2>
+
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" formControlName="username" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" formControlName="password" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirmar Contraseña:</label>
+      <input type="password" id="confirmPassword" formControlName="confirmPassword" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Registrarme</button>
+
+
+    <p>
+     Ya tenes cuenta? <a routerLink="/login">Entra ya</a> 
+    </p>
+  </form>
+</div>

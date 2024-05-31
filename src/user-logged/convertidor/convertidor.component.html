@@ -1,0 +1,41 @@
+<div class="container">
+  <h2>Conversor de Monedas</h2>
+
+  <form [formGroup]="conversionForm">
+    <div class="form-group">
+      <label for="amount">Monto:</label>
+      <input type="number" id="amount" formControlName="amount" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="fromCurrency">De:</label>
+      <select id="fromCurrency" [formControl]="fromCurrency" class="form-control">
+        @for (currency of currencies(); track currency) { 
+          <option [ngValue]="currency">
+            {{ currency.name }} ({{ currency.symbol }})
+          </option>
+        }
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="toCurrency">A:</label>
+      <select id="toCurrency" [formControl]="toCurrency" class="form-control">
+        @for (currency of currencies(); track currency) { 
+          <option [ngValue]="currency">
+            {{ currency.name }} ({{ currency.symbol }})
+          </option>
+        }
+      </select>
+    </div>
+
+    <button (click)="convertCurrency()" class="btn btn-primary">Convertir</button>
+  </form>
+
+  @if (convertedAmount()) {
+    <div class="result">
+      Resultado: {{ convertedAmount() }}
+    </div>
+  }
+</div>
+

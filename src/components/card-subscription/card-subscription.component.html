@@ -1,0 +1,14 @@
+@if (subscription) {
+  <div class="card" (click)="selectSubscription()">
+    <h3>{{ subscription.name }}</h3>
+    <p>Límite de Conversiones: 
+      @if(subscription.conversionsLimit === 0){
+        Ilimitado
+      } @else {
+        {{subscription.conversionsLimit}}
+      }
+    </p>
+    <p>{{ subscription.description }}</p>
+    <p>Precio: {{ subscription.price | currency }}</p> 
+  </div>
+}

@@ -1,0 +1,12 @@
+<h2>Elige tu Plan de Suscripción</h2>
+
+@if (subscriptions().length > 0) {
+  <div class="subscription-grid">
+    @for (subscription of subscriptions(); track subscription) { 
+      <app-card-subscription 
+        [subscription]="subscription"
+        (subscriptionSelected)="onSubscriptionSelected($event)"
+      ></app-card-subscription>
+    }
+  </div>
+}

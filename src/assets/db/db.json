@@ -1,0 +1,32 @@
+{
+  "jsonData": [
+    {
+      "id": 1,
+      "code": "ARS",
+      "name": "Peso Argentino",
+      "symbol": "$",
+      "convertibilityIndex": 0.002
+    },
+    {
+      "id": 2,
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "convertibilityIndex": 1.09
+    },
+    {
+      "id": 3,
+      "code": "Kc",
+      "name": "Corona Checa",
+      "symbol": "Kč",
+      "convertibilityIndex": 0.043
+    },
+    {
+      "id": 4,
+      "code": "USD",
+      "name": "Dólar Americano",
+      "symbol": "$",
+      "convertibilityIndex": 1
+    }
+  ]
+}

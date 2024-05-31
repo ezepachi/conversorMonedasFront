@@ -1,0 +1,23 @@
+<div>
+    <h1>Monety</h1>
+    <h2>Iniciar sesión</h2>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" formControlName="username" class="form-control">
+    </div>
+
+
+    <div class="form-group">
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" formControlName="password" class="form-control">
+    </div>
+
+    <button type="submit" class="">Ingresar</button>
+
+    <p>
+        No tienes cuenta? <a routerLink="/register">Regístrate</a> 
+    </p>
+    </form>
+</div>
